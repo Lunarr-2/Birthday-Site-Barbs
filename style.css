@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:Poppins;
+    }
+    
+    body{
+    background:#0b0b0b;
+    color:white;
+    overflow-x:hidden;
+    }
+    
+    /* HERO SECTION */
+    
+    .hero{
+    height:100vh;
+    overflow:hidden;
+    position:relative;
+    }
+    
+    .hero img{
+    width:100%;
+    height:120%;
+    object-fit:cover;
+    position:absolute;
+    top:0;
+    left:0;
+    transform:scale(1.2);
+    transition:transform .4s ease-out;
+    }
+    
+    /* SECTION 2 */
+    
+    .section2{
+    min-height:110vh;
+    text-align:center;
+    padding-top:100px;
+    }
+    
+    .title{
+    font-family:"Playfair Display";
+    font-size:60px;
+    margin-bottom:30px;
+    }
+    
+    .age{
+    font-size:150px;
+    font-weight:700;
+    }
+    
+    .age span{
+    font-size:45px;
+    vertical-align:top;
+    }
+    
+    .subtitle{
+    font-size:18px;
+    opacity:.7;
+    margin-bottom:70px;
+    }
+    
+    /* POLAROID STACK */
+    
+    .polaroid-container{
+    position:relative;
+    width:600px;
+    height:350px;
+    margin:auto;
+    }
+    
+    .polaroid{
+    position:absolute;
+    background:white;
+    padding:10px 10px 35px;
+    width:220px;
+    height:260px;
+    box-shadow:0 20px 30px rgba(0,0,0,.5);
+    transition:.35s;
+    }
+    
+    .polaroid img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    }
+    
+    /* same size but rotated */
+    
+    .polaroid:nth-child(1){
+    transform:rotate(-10deg);
+    left:0;
+    top:20px;
+    }
+    
+    .polaroid:nth-child(2){
+    transform:rotate(6deg);
+    left:80px;
+    top:0;
+    }
+    
+    .polaroid:nth-child(3){
+    transform:rotate(-4deg);
+    left:160px;
+    top:30px;
+    }
+    
+    .polaroid:nth-child(4){
+    transform:rotate(-6deg);
+    left:240px;
+    top:30px;
+    }
+    
+    .polaroid:nth-child(5){
+    transform:rotate(-12deg);
+    left:320px;
+    top:30px;
+    }
+    
+    .polaroid:nth-child(6){
+    transform:rotate(8deg);
+    left:400px;
+    top:10px;
+    }
+    
+    .polaroid:hover{
+    transform:scale(1.08);
+    z-index:10;
+    }
+    
+    /* Q&A */
+    
+    .section3{
+    min-height:100vh;
+    padding:120px 20px;
+    text-align:center;
+    }
+    
+    .qa{
+    max-width:700px;
+    margin:auto;
+    }
+    
+    .card{
+    background:#1a1a1a;
+    padding:25px;
+    margin:15px 0;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+    }
+    
+    .card:hover{
+    background:#262626;
+    }
+    
+    .answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .4s ease;
+    opacity:.8;
+    }
+    
+    /* FOOTER DATE */
+    
+    .footer{
+    height:200px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+    font-family:"Playfair Display";
+    opacity:.7;
+    }
+    
+    /* HEARTS */
+    
+    .heart{
+    position:fixed;
+    bottom:-10px;
+    font-size:22px;
+    animation:float 6s linear infinite;
+    }
+    
+    @keyframes float{
+    0%{transform:translateY(0)}
+    100%{transform:translateY(-120vh)}
+    }
+    
