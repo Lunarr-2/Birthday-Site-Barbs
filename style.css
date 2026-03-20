@@ -329,7 +329,7 @@ body::before {
   line-height: 1.4;
 }
 .answer {
-  max-height: 0;
+  max-height: auto;
   overflow: hidden;
   transition: max-height .45s ease, padding .35s ease;
   font-size: clamp(13px, 1.8vw, 15px);
