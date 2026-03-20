@@ -336,7 +336,6 @@ body::before {
   color: var(--blush);
   opacity: .85;
   padding-top: 0;
-  padding-bottom: 10px;
   line-height: 1.7;
 }
 .card.open .answer {
