@@ -284,6 +284,43 @@
       letter-spacing: .05em;
     }
 
+    /* MUSIC BUTTON */
+    #musicBtn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 9999;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      border: 1px solid rgba(201,128,106,.5);
+      background: rgba(26,15,10,.85);
+      color: var(--rose);
+      font-size: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(8px);
+      transition: transform .3s ease, border-color .3s, background .3s;
+      animation: musicPulse 2s ease-in-out infinite;
+    }
+    #musicBtn:hover {
+      transform: scale(1.12);
+      border-color: var(--rose);
+      background: rgba(201,128,106,.2);
+      animation: none;
+    }
+    #musicBtn.playing {
+      animation: none;
+      opacity: 0.45;
+    }
+    #musicBtn.playing:hover { opacity: 1; }
+    @keyframes musicPulse {
+      0%,100% { transform: scale(1);    box-shadow: 0 0 0 0 rgba(201,128,106,.4); }
+      50%      { transform: scale(1.08); box-shadow: 0 0 0 8px rgba(201,128,106,0); }
+    }
+
     /* REVEAL */
     .reveal {
       opacity: 0;
