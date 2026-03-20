@@ -1,7 +1,45 @@
-/* MUSIC */
-  document.body.addEventListener('click', () => {
-    document.getElementById('music').play().catch(() => {});
-  }, { once: true });
+/* MUSIC — muted autoplay (allowed by browsers), unmute on first interaction */
+  const music = document.getElementById('music');
+  const btn   = document.getElementById('musicBtn');
+  let unlocked = false;
+
+  function unlock() {
+    if (unlocked) return;
+    unlocked = true;
+    music.muted = false;
+    music.volume = 0.7;
+    btn.classList.add('playing');
+    btn.title = 'Music playing (click to pause)';
+  }
+
+  // Start muted autoplay immediately
+  music.play().catch(() => {});
+
+  // Unmute on any first touch/click/scroll
+  ['click','touchstart','scroll','keydown'].forEach(evt => {
+    document.addEventListener(evt, unlock, { once: true, passive: true });
+  });
+
+  // Button: toggle play/pause & mute
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    if (music.paused) {
+      music.muted = false;
+      music.play();
+      btn.textContent = '♪';
+      btn.classList.add('playing');
+      unlocked = true;
+    } else if (!music.muted) {
+      music.muted = true;
+      btn.textContent = '♪';
+      btn.classList.remove('playing');
+      btn.title = 'Click to play music';
+    } else {
+      music.muted = false;
+      btn.classList.add('playing');
+      btn.title = 'Music playing (click to mute)';
+    }
+  });
 
   /* HERO PARALLAX */
   const heroImg = document.getElementById('heroImage');
