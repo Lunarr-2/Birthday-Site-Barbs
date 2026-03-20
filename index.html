@@ -1,111 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Happy Birthday My Love</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-
-
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday My Love</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
 
-<audio id="music" src="music.mp3" loop></audio>
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
 
-<!-- HERO -->
+  <!-- AUDIO -->
+  <audio id="music" src="music.mp3" loop></audio>
 
-<!-- HERO -->
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero__img" id="heroImage" src="images/photo8.jpg" alt="Hero photo">
+    <div class="hero__vignette"></div>
+    <div class="hero__text">
+      <p class="hero__eyebrow">for my favourite person</p>
+      <h1 class="hero__title">Happy Birthday,<br>My Love</h1>
+      <div class="hero__scroll">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+        <span>scroll</span>
+      </div>
+    </div>
+  </section>
 
-<section class="hero">
-    <img id="heroImage" src="images/photo8.jpg">
-    </section>
+  <!-- SECTION 2 -->
+  <section class="section2">
+    <div class="age-block reveal">
+      <span class="num">18</span><span class="sup">th</span>
+    </div>
+    <h2 class="s-title reveal reveal-delay-1">Happy Birthday My Love</h2>
+    <p class="subtitle reveal reveal-delay-2">happy 18th love, because you're forever young</p>
 
+    <div class="polaroid-grid">
+      <div class="polaroid reveal">
+        <img src="images/photo3.jpg" alt="">
+      </div>
+      <div class="polaroid reveal reveal-delay-1">
+        <img src="images/photo4.jpg" alt="">
+      </div>
+      <div class="polaroid reveal reveal-delay-2">
+        <img src="images/photo5.jpg" alt="">
+      </div>
+      <div class="polaroid reveal">
+        <img src="images/photo6.jpg" alt="">
+      </div>
+      <div class="polaroid reveal reveal-delay-1">
+        <img src="images/photo7.jpg" alt="">
+      </div>
+      <div class="polaroid reveal reveal-delay-2">
+        <img src="images/photo2.JPG" alt="">
+      </div>
+    </div>
 
-<!-- BIRTHDAY SECTION -->
+    <div class="divider"></div>
+  </section>
 
-<section class="section2">
+  <!-- SECTION 3 Q&A -->
+  <section class="section3">
+    <h2 class="s-title reveal">Questions &amp; Answers</h2>
+    <div class="qa">
+      <div class="card reveal">
+        <p>My skin is always red, why, i feel so bleck?</p>
+        <div class="answer">You're too meleg, your skin is just reacting to the heat xD</div>
+      </div>
+      <div class="card reveal reveal-delay-1">
+        <p>Do you hate me? Because i'm so annoying?</p>
+        <div class="answer">No, I don't hate you, I love you! xaxaxa.</div>
+      </div>
+      <div class="card reveal reveal-delay-2">
+        <p>If i were a vegetable, what would you be?</p>
+        <div class="answer">For you i would be a vegan (I would still eat meat tho xD).</div>
+      </div>
+      <div class="card reveal reveal-delay-3">
+        <p>look at the stars does it shine for me?</p>
+        <div class="answer">Yes, it shines for you, because you're so yellow xD.</div>
+      </div>
+    </div>
+  </section>
 
-<h1 class="title">Happy Birthday My Love</h1>
+  <!-- FOOTER -->
+  <footer>
+    <p>forever &amp; always — with love &#9825;</p>
+  </footer>
 
-<div class="age">
-18<span>th</span>
-</div>
-
-<p class="subtitle">
-happy 18th love, because you're forever young
-</p>
-
-<div class="polaroid-container">
-
-<div class="polaroid">
-<img src="images/photo3.jpg">
-</div>
-
-<div class="polaroid">
-<img src="images/photo4.jpg">
-</div>
-
-<div class="polaroid">
-<img src="images/photo5.jpg">
-</div>
-
-<div class="polaroid">
-<img src="images/photo6.jpg">
-</div>
-
-<div class="polaroid">
-<img src="images/photo7.jpg">
-</div>
-
-<div class="polaroid">
-<img src="images/photo2.JPG">
-</div>
-
-</div>
-
-
-
-</section>
-
-
-<!-- Q&A -->
-
-<section class="section3">
-
-<h1 class="title">Questions & Answers</h1>
-
-<div class="qa">
-
-<div class="card">
-<p>My skin is always red, why, i feel so bleck?</p>
-<div class="answer">You're too meleg, your skin is just reacting to the heat xD</div>
-</div>
-
-<div class="card">
-<p>Do you hate me?  Because i'm so annoying?</p>
-<div class="answer">No, I don't hate you, I love you! xaxaxa.</div>
-</div>
-
-<div class="card">
-<p>If i were a vegetable, what would you be?</p>
-<div class="answer">For you i would be a vegan (I would still eat meat tho xD).</div>
-</div>
-
-<div class="card">
-<p>look at the stars does it shine for me?</p>
-<div class="answer">Yes, it shines for you, because you're so yellow xD.</div>
-</div>
-
-</div>
-
-</section>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
+
